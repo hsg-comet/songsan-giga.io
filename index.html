@@ -38,15 +38,15 @@
             object-fit: cover;
         }
 
-        /* 오른쪽 위 삼각형 (급식표) */
-        .top-right {
-            clip-path: polygon(100% 0, 100% 100%, 0 0);
+        /* 왼쪽 위 삼각형 (급식표) */
+        .top-left {
+            clip-path: polygon(0 0, 100% 0, 0 100%);
             z-index: 1;
         }
 
-        /* 왼쪽 아래 삼각형 (시간표) */
-        .bottom-left {
-            clip-path: polygon(0 0, 100% 100%, 0 100%);
+        /* 오른쪽 아래 삼각형 (시간표) */
+        .bottom-right {
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
             z-index: 2;
         }
 
@@ -72,11 +72,11 @@
         <!-- 대각선 -->
         <div class="diagonal-line"></div>
         <!-- 급식표 -->
-        <a href="https://example.com/meal" class="half top-right">
+        <a href="https://example.com/meal" class="half top-left">
             <img src="https://via.placeholder.com/500x500.png?text=급식표" alt="급식표">
         </a>
         <!-- 시간표 -->
-        <a href="https://example.com/timetable" class="half bottom-left">
+        <a href="https://example.com/timetable" class="half bottom-right">
             <img src="https://via.placeholder.com/500x500.png?text=시간표" alt="시간표">
         </a>
     </div>
